@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Oxide.Plugins
 {
@@ -112,7 +113,7 @@ namespace Oxide.Plugins
 
         #endregion Oxide Hooks
 
-        #region Permission
+        #region Permissions
 
         private static class PermissionUtil
         {
@@ -136,6 +137,6 @@ namespace Oxide.Plugins
             }
         }
 
-        #endregion Permission
+        #endregion Permissions
     }
 }
