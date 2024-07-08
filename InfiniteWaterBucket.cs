@@ -1,6 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿/*
+ * Copyright (C) 2024 Game4Freak.io
+ * Your use of this mod indicates acceptance of the Game4Freak EULA.
+ * Full legal terms can be found at https://game4freak.io/eula/
+ */
+
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Oxide.Plugins
 {
