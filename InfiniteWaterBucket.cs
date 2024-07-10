@@ -1,6 +1,6 @@
 ﻿/*
  * Copyright (C) 2024 Game4Freak.io
- * Your use of this mod indicates acceptance of the Game4Freak EULA.
+ * This mod is provided under the Game4Freak EULA.
  * Full legal terms can be found at https://game4freak.io/eula/
  */
 
@@ -10,10 +10,11 @@ using System.Collections.Generic;
 namespace Oxide.Plugins
 {
     [Info("Infinite Water Bucket", "VisEntities", "1.0.0")]
-    [Description(" ")]
+    [Description("Provides an infinite water source by automatically refilling water containers.")]
     public class InfiniteWaterBucket : RustPlugin
     {
         #region Fields
+
         private static InfiniteWaterBucket _plugin;
         private static Configuration _config;
 
@@ -73,7 +74,8 @@ namespace Oxide.Plugins
                 {
                     "bucket.water",
                     "waterjug",
-                    "smallwaterbottle"
+                    "smallwaterbottle",
+                    "botabag"
                 }
             };
         }
