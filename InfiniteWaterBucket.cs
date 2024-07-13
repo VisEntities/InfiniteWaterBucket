@@ -100,7 +100,7 @@ namespace Oxide.Plugins
         {
             if (item == null || (item.info.shortname != "water" && item.info.shortname != "water.salt"))
                 return consumptionAmount;
-
+            
             if (!_config.AutoRefillableItemShortNames.Contains(item.parentItem.info.shortname))
                 return consumptionAmount;
 
