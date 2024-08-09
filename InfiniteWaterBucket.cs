@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Oxide.Plugins
 {
-    [Info("Infinite Water Bucket", "VisEntities", "1.0.0")]
+    [Info("Infinite Water Bucket", "VisEntities", "1.0.1")]
     [Description("Provides an infinite water source by automatically refilling water containers.")]
     public class InfiniteWaterBucket : RustPlugin
     {
@@ -100,7 +100,10 @@ namespace Oxide.Plugins
         {
             if (item == null || (item.info.shortname != "water" && item.info.shortname != "water.salt"))
                 return consumptionAmount;
-            
+
+            if (item.parentItem == null || item.parentItem.info == null)
+                return consumptionAmount;
+
             if (!_config.AutoRefillableItemShortNames.Contains(item.parentItem.info.shortname))
                 return consumptionAmount;
 
